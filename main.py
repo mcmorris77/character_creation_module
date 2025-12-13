@@ -1,6 +1,7 @@
 from random import randint
 from graphic_arts.start_game_banner import run_screensaver
 
+<<<<<<< HEAD
 def attack(char_name: str, char_class: str) -> str:
     """Выполняет атаку персонажа в зависимости от его класса.
        Args: {char_name}
@@ -8,6 +9,11 @@ def attack(char_name: str, char_class: str) -> str:
        Returns:
              Строка с описанием приёменённого спец уровня
     """
+=======
+
+def attack(char_name: str, char_class: str) -> str:
+    """Выполняет атаку персонажа в зависимости от его класса."""
+>>>>>>> 6de96500182b4971182c0b2d41558e7b7baa71d8
     if char_class == 'warrior':
         return (f'{char_name} нанёс противнику урон, равный '
                 f'{5 + randint(3, 5)}')
@@ -20,11 +26,15 @@ def attack(char_name: str, char_class: str) -> str:
 
 
 def defence(char_name: str, char_class: str) -> str:
+<<<<<<< HEAD
     """Выполняет защиту персонажа в зависимости от его класса.
        Args:
             {char_name}
             {char_class}
     """
+=======
+    """Выполняет защиту персонажа в зависимости от его класса."""
+>>>>>>> 6de96500182b4971182c0b2d41558e7b7baa71d8
     if char_class == 'warrior':
         return (f'{char_name} блокировал {10 + randint(5, 10)} ед. урона')
     if char_class == 'mage':
@@ -34,6 +44,7 @@ def defence(char_name: str, char_class: str) -> str:
 
 
 def special(char_name: str, char_class: str) -> str:
+<<<<<<< HEAD
     """
     Применяет специальное умение персонажа.
 
@@ -49,6 +60,9 @@ def special(char_name: str, char_class: str) -> str:
     Returns:
         Строка с описанием применённого специального умения.
     """
+=======
+    """Применяет специальное умение персонажа."""
+>>>>>>> 6de96500182b4971182c0b2d41558e7b7baa71d8
     if char_class == 'warrior':
         return (f'{char_name} применил специальное умение '
                 f'«Выносливость {80 + 25}»')
@@ -59,6 +73,7 @@ def special(char_name: str, char_class: str) -> str:
 
 
 def start_training(char_name: str, char_class: str) -> str:
+<<<<<<< HEAD
     """
     Запускает режим тренировки для персонажа.
 
@@ -74,6 +89,9 @@ def start_training(char_name: str, char_class: str) -> str:
     Returns:
         Строка 'Тренировка окончена.' при завершении тренировки.
     """
+=======
+    """Запускает тренировку персонажа."""
+>>>>>>> 6de96500182b4971182c0b2d41558e7b7baa71d8
     if char_class == 'warrior':
         print(f'{char_name}, ты Воитель — великий мастер ближнего боя.')
     if char_class == 'mage':
@@ -98,6 +116,7 @@ def start_training(char_name: str, char_class: str) -> str:
 
 
 def choice_char_class() -> str:
+<<<<<<< HEAD
     """
     Позволяет игроку выбрать класс персонажа.
 
@@ -113,6 +132,9 @@ def choice_char_class() -> str:
     Returns:
         Строка с выбранным классом персонажа (warrior, mage или healer).
     """
+=======
+    """Позволяет игроку выбрать класс персонажа."""
+>>>>>>> 6de96500182b4971182c0b2d41558e7b7baa71d8
     approve_choice: str = ''
     char_class: str = ''
     while approve_choice != 'y':
@@ -133,8 +155,12 @@ def choice_char_class() -> str:
                                'выбрать другого персонажа ').lower()
     return char_class
 
+<<<<<<< HEAD
 def __name__=='__main__':
     run_screensaver()
+=======
+def main() -> None:
+>>>>>>> 6de96500182b4971182c0b2d41558e7b7baa71d8
     """Главная функция игры, запускает игровой процесс."""
     print('Приветствую тебя, искатель приключений!')
     print('Прежде чем начать игру...')
@@ -144,5 +170,9 @@ def __name__=='__main__':
     print('Ты можешь выбрать один из трёх путей силы:')
     print('Воитель, Маг, Лекарь')
     char_class: str = choice_char_class()
+<<<<<<< HEAD
     print(start_training(char_name, char_class))
 main()
+=======
+    print(start_training(char_name, char_class))
+>>>>>>> 6de96500182b4971182c0b2d41558e7b7baa71d8
